@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tống Ngọc Minh Châu | Portfolio Sinh Viên CNTT LHU</title>
+
+  <!-- 1. Google Fonts: Font chữ hiện đại Inter & Fira Code cho code/typing -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- 2. FontAwesome Icons: Bộ icon cho mạng xã hội, kỹ năng, liên hệ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- 3. Animate.css: Thư viện hiệu ứng xuất hiện cho chữ và nút bấm -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- 4. Tệp External CSS riêng biệt -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       1. HEADER & NAVIGATION MENU
+       Sử dụng thẻ <header> và <nav> chuẩn Semantic HTML5
+  =========================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <!-- Logo thương hiệu cá nhân -->
+      <a href="#" class="logo">
+        <span class="logo-accent">&lt;</span>Portfolio MySelf<span class="logo-accent">&gt;</span>
+      </a>
+
+      <!-- Thanh điều hướng chính -->
+      <nav class="nav-menu">
+        <a href="#about" class="nav-link">Giới thiệu</a>
+        <a href="#skills" class="nav-link">Kỹ năng</a>
+        <a href="#guides" class="nav-link">Góc học tập</a>
+        <a href="#contact" class="nav-link btn-nav">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       2. MAIN CONTENT AREA
+       Khu vực chứa nội dung chính của toàn bộ trang
+  =========================================== -->
+  <main>
+
+    <!-- SECTION 1: HERO SECTION / GIỚI THIỆU TỔNG QUAN -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <!-- Khối văn bản bên trái -->
+        <div class="hero-content animate__animated animate__fadeInLeft">
+          <span class="badge">LHU Freshman Developer</span>
+          <h1 class="hero-title">
+            Xin chào! Mình là <br>
+            <span class="highlight-text">Tống Ngọc Minh Châu</span>
+          </h1>
+
+          <!-- YÊU CẦU 1: Typing Effect bằng CSS thuần -->
+          <div class="typing-container">
+            <p class="typing-text">Sinh viên năm nhất ngành CNTT - Đại học Lạc Hồng...</p>
+          </div>
+
+          <p class="hero-desc">
+            Hành trình khám phá thế giới lập trình bắt đầu từ những dòng code HTML & CSS đầu tiên. Yêu thích sáng tạo giao diện web tinh tế và học hỏi công nghệ mới mỗi ngày.
+          </p>
+
+          <div class="hero-btns">
+            <a href="#guides" class="btn btn-primary animate__animated animate__pulse animate__infinite">Khám phá góc học tập</a>
+            <a href="#contact" class="btn btn-outline">Gửi tin nhắn</a>
+          </div>
+        </div>
+
+        <!-- Khối ảnh avatar bên phải -->
+        <div class="hero-image animate__animated animate__fadeInRight">
+          <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Tống Ngọc Minh Châu - Sinh viên LHU">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION 2: GIỚI THIỆU BẢN THÂN (ABOUT ME) -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">Về bản thân</h2>
+        <p class="section-subtitle">Bắt đầu từ con số 0 với niềm đam mê công nghệ mãnh liệt</p>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3>Học tập tại LHU</h3>
+            <p>Hiện đang học năm nhất ngành Công nghệ Thông tin tại Đại học Lạc Hồng. Đang tích cực rèn luyện tư duy logic và thuật toán cơ bản.</p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Mục tiêu lập trình</h3>
+            <p>Tập trung làm chủ HTML5, CSS3, JavaScript cơ bản và từng bước khám phá các Framework như ReactJS để phát triển Web Front-End.</p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-icon"><i class="fa-solid fa-heart"></i></div>
+            <h3>Sở thích & Phong cách</h3>
+            <p>Thích thiết kế giao diện Minimalism, phối màu Pastel nhẹ nhàng và viết tài liệu chia sẻ lại kiến thức học được cho bạn bè.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION 3: YÊU CẦU 4 - KỸ NĂNG & ANIMATED PROGRESS BARS -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2 class="section-title">Tiến độ học tập kỹ năng</h2>
+        <p class="section-subtitle">Quá trình rèn luyện thực tế trong năm học đầu tiên</p>
+
+        <div class="skills-wrapper">
+          
+          <!-- Skill 1: HTML5 -->
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fa-brands fa-html5"></i> HTML5 (Semantic Structure)</span>
+              <span class="skill-val">85%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill progress-html"></div>
+            </div>
+          </div>
+
+          <!-- Skill 2: CSS3 -->
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fa-brands fa-css3-alt"></i> CSS3 (Flexbox, Grid, Animation)</span>
+              <span class="skill-val">75%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill progress-css"></div>
+            </div>
+          </div>
+
+          <!-- Skill 3: C / C++ -->
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fa-solid fa-code"></i> C / C++ (Tư duy thuật toán LHU)</span>
+              <span class="skill-val">65%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill progress-cpp"></div>
+            </div>
+          </div>
+
+          <!-- Skill 4: Git & GitHub -->
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name"><i class="fa-brands fa-github"></i> Git & Quản lý mã nguồn</span>
+              <span class="skill-val">50%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill progress-git"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION 4: YÊU CẦU 3 - PARALLAX BANNER SECTION -->
+    <section class="parallax-section">
+      <div class="parallax-overlay"></div>
+      <div class="container parallax-content">
+        <h2>"Hành trình vạn dặm bắt đầu từ một bước chân"</h2>
+        <p>Kiên trì thực hành mỗi ngày tại môi trường năng động của Đại học Lạc Hồng.</p>
+        <span class="parallax-tag">#LHU_IT_Student #LearningByDoing</span>
+      </div>
+    </section>
+
+
+    <!-- SECTION 5: YÊU CẦU 2 - GÓC HỌC TẬP & HiỆU ỨNG LẬT THẺ 3D (CARD FLIP) -->
+    <section id="guides" class="guides-section">
+      <div class="container">
+        <h2 class="section-title">Góc học tập & Thử nghiệm CSS</h2>
+        <p class="section-subtitle">Hover vào các thẻ bên dưới để xem bí quyết thực hiện hiệu ứng CSS!</p>
+
+        <div class="flip-cards-grid">
+          
+          <!-- CARD FLIP 1: Card Flip 3D -->
+          <div class="flip-card-container">
+            <div class="flip-card-inner">
+              <!-- Mặt trước -->
+              <div class="flip-card-front">
+                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=500&q=80" alt="Hiệu ứng Lật thẻ 3D">
+                <div class="flip-card-front-content">
+                  <span class="card-badge">CSS 3D Transform</span>
+                  <h3>Hiệu ứng Lật thẻ 3D (Card Flip)</h3>
+                  <p><i class="fa-solid fa-hand-pointer"></i> Hover vào đây để xem cách làm</p>
+                </div>
+              </div>
+              <!-- Mặt sau -->
+              <div class="flip-card-back">
+                <h3>Cách tạo Card Flip 3D</h3>
+                <p>1. Dùng <code>perspective: 1000px</code> ở thẻ cha để tạo chiều sâu 3D.<br>
+                   2. Thẻ inner có <code>transform-style: preserve-3d</code>.<br>
+                   3. Khi hover: xoay <code>rotateY(180deg)</code>.<br>
+                   4. Mặt sau ẩn đi nhờ <code>backface-visibility: hidden</code>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD FLIP 2: Typing Effect -->
+          <div class="flip-card-container">
+            <div class="flip-card-inner">
+              <!-- Mặt trước -->
+              <div class="flip-card-front">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=80" alt="Hiệu ứng Máy đánh chữ">
+                <div class="flip-card-front-content">
+                  <span class="card-badge">Pure CSS Keyframes</span>
+                  <h3>Hiệu ứng Máy đánh chữ (Typing)</h3>
+                  <p><i class="fa-solid fa-hand-pointer"></i> Hover vào đây để xem cách làm</p>
+                </div>
+              </div>
+              <!-- Mặt sau -->
+              <div class="flip-card-back">
+                <h3>Cách tạo Typing Effect</h3>
+                <p>1. Set <code>overflow: hidden</code> và <code>white-space: nowrap</code>.<br>
+                   2. Dùng <code>@keyframes</code> thay đổi chiều rộng từ <code>width: 0</code> lên <code>100%</code>.<br>
+                   3. Kết hợp <code>steps(...)</code> để chữ xuất hiện theo từng ký tự.<br>
+                   4. Tạo viền phải <code>border-right</code> nhấp nháy làm con trỏ.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD FLIP 3: Parallax Section -->
+          <div class="flip-card-container">
+            <div class="flip-card-inner">
+              <!-- Mặt trước -->
+              <div class="flip-card-front">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=500&q=80" alt="Hiệu ứng Parallax Scroll">
+                <div class="flip-card-front-content">
+                  <span class="card-badge">CSS Background</span>
+                  <h3>Hiệu ứng Parallax cuộn trang</h3>
+                  <p><i class="fa-solid fa-hand-pointer"></i> Hover vào đây để xem cách làm</p>
+                </div>
+              </div>
+              <!-- Mặt sau -->
+              <div class="flip-card-back">
+                <h3>Cách tạo Parallax CSS</h3>
+                <p>1. Đặt <code>background-image</code> cho Section.<br>
+                   2. Sử dụng thuộc tính <code>background-attachment: fixed</code>.<br>
+                   3. Căn chỉnh <code>background-size: cover</code> và <code>background-position: center</code> để hiển thị tốt trên mọi thiết bị.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==========================================
+       3. FOOTER SECTION
+       Chân trang chứa thông tin cá nhân chuẩn Semantic
+  =========================================== -->
+  <footer id="contact" class="footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <h3>Tống Ngọc Minh Châu</h3>
+        <p>Sinh viên năm nhất ngành CNTT - Trường Đại học Lạc Hồng (LHU)</p>
+        <p class="footer-demo-note"><i class="fa-solid fa-info-circle"></i> Trang tin demo phục vụ học tập & thực hành kỹ thuật CSS HTML5.</p>
+      </div>
+
+      <div class="footer-socials">
+        <h4>Kết nối học tập</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Github"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" aria-label="Envelope"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Tống Ngọc Minh Châu. Thiết kế với màu Tím Pastel & Xanh Mint.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
